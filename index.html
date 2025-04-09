@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Riviera Maya Mexican Restaurant</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riviera Maya Mexican Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(45deg, #d72638, #f46036);
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+      background-image: url('https://www.transparenttextures.com/patterns/mexican-skull.png');
+    }
+    nav {
+      background: #f6aa1c;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .highlight {
+      background: #fff0e6;
+      border-left: 5px solid #d72638;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .visit-us, .contact-us {
+      flex: 1;
+      background: #fff5e1;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .business-hours {
+      flex: 1;
+      background: #fff0e6;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .business-hours h3 {
+      margin-bottom: 1rem;
+    }
+    .business-hours ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .business-hours li {
+      padding: 5px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    footer {
+      background: #f46036;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header Section -->
   <header>
     <h1>Riviera Maya Mexican Restaurant</h1>
     <p>Authentic Flavors from the Heart of Mexico</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-    </nav>
   </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+  </nav>
 
-  <!-- About Us Section (Located on Home Page) -->
-  <section id="about-us">
+  <section id="home">
     <h2>About Us</h2>
-    <p>At Riviera Maya, we bring the vibrant and authentic flavors of Mexico right to your table. With years of tradition in every dish, our mission is to deliver an unforgettable dining experience. We pride ourselves on using fresh, locally sourced ingredients, and every meal is made with love and passion for Mexican cuisine. Come visit us and taste the difference!</p>
+    <div class="highlight">
+      <p>Located in Henderson, Nevada, Riviera Maya serves vibrant, homemade Mexican dishes made with love. Our colorful plates, warm staff, and authentic recipes bring the taste of Mexico right to your table.</p>
+    </div>
+
+    <div class="container">
+      <!-- Visit Us Section -->
+      <div class="visit-us">
+        <h2>Visit Us</h2>
+        <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
+        <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed"></iframe>
+      </div>
+
+      <!-- Business Hours Section -->
+      <div class="business-hours">
+        <h3>Business Hours</h3>
+        <ul>
+          <li>Wednesday: 2:00 PM – 9:00 PM</li>
+          <li>Thursday: 2:00 PM – 9:00 PM</li>
+          <li>Friday: 2:00 PM – 10:00 PM</li>
+          <li>Saturday: 12:00 PM – 10:00 PM</li>
+          <li>Sunday: 12:00 PM – 9:00 PM</li>
+          <li>Monday: 2:00 PM – 9:00 PM</li>
+          <li>Tuesday: 2:00 PM – 9:00 PM</li>
+        </ul>
+      </div>
+
+      <!-- Contact Us Section -->
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out with any questions or comments! We'll get back to you as soon as possible.</p>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
   </section>
 
-  <!-- Visit Us Section -->
-  <section id="visit-us">
-    <h2>Visit Us</h2>
-    <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
-    <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
-    <h3>Business Hours:</h3>
-    <ul>
-      <li>Wednesday: 2:00 PM – 9:00 PM</li>
-      <li>Thursday: 2:00 PM – 9:00 PM</li>
-      <li>Friday: 2:00 PM – 10:00 PM</li>
-      <li>Saturday: 12:00 PM – 10:00 PM</li>
-      <li>Sunday: 12:00 PM – 9:00 PM</li>
-      <li>Monday: 2:00 PM – 9:00 PM</li>
-      <li>Tuesday: 2:00 PM – 9:00 PM</li>
-    </ul>
-  </section>
-
-  <!-- Contact Us Section -->
-  <section id="contact-us">
-    <h2>Contact Us</h2>
-    <form action="mailto:dorta.nico2@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-      <input type="tel" id="phone" name="phone" placeholder="Phone Number">
-      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
   </footer>
-
-  <!-- Script to Validate Form Input (Optional) -->
-  <script>
-    // Basic validation for email or phone format before submitting
-    document.querySelector('form').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-
-      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-      const phonePattern = /^\d{10}$/;
-
-      if (email && !email.match(emailPattern)) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-
-      if (phone && !phone.match(phonePattern)) {
-        alert('Please enter a valid 10-digit phone number.');
-        return;
-      }
-
-      this.submit();
-    });
-  </script>
-
 </body>
 </html>

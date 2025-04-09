@@ -30,4 +30,8 @@ function sendEmail(event) {
   `;
 
   // Send an email (This would normally be a backend email API)
-  window.location.href = `mailto:dorta.nico2@gmail.com?subject=Message from ${document.getElementById('
+  window.location.href = `mailto:dorta.nico2@gmail.com?subject=Message from ${document.getElementById('name').value}&body=${emailContent}`;
+
+  // Reset form after submission
+  document.getElementById('contact-form').reset();
+}

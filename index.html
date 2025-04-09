@@ -8,27 +8,63 @@
 </head>
 <body>
 
-  <!-- Fixed Header Section -->
+  <!-- Header Section -->
   <header>
     <h1>Riviera Maya Mexican Restaurant</h1>
     <p>Authentic Flavors from the Heart of Mexico</p>
     <nav>
-      <a href="#menu">Menu</a>
-      <a href="#home">Home</a>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
     </nav>
   </header>
 
   <!-- Main Content Section -->
   <main>
-    <!-- About Us Section within Yellow Area -->
-    <section id="about-us" class="about-us">
+    <!-- About Us Section (Moved to the top) -->
+    <section id="about-us">
       <h2>About Us</h2>
       <p>At Riviera Maya, we bring the vibrant and authentic flavors of Mexico right to your table. With years of tradition in every dish, our mission is to deliver an unforgettable dining experience. We pride ourselves on using fresh, locally sourced ingredients, and every meal is made with love and passion for Mexican cuisine. Come visit us and taste the difference!</p>
     </section>
 
-    <!-- Visit Us & Contact Section -->
-    <section id="visit-us-contact" class="visit-contact">
-      <div class="map">
-        <h2>Visit Us</h2>
-        <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
-        <iframe src="https://www.google.com/maps?q=
+    <!-- Visit Us Section -->
+    <section id="visit-us">
+      <h2>Visit Us</h2>
+      <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
+      <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
+      <h3>Business Hours</h3>
+      <ul>
+        <li>Wednesday: 2 PM – 9 PM</li>
+        <li>Thursday: 2 PM – 9 PM</li>
+        <li>Friday: 2 PM – 10 PM</li>
+        <li>Saturday: 12 PM – 10 PM</li>
+        <li>Sunday: 12 PM – 9 PM</li>
+        <li>Monday: 2 PM – 9 PM</li>
+        <li>Tuesday: 2 PM – 9 PM</li>
+      </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <form action="mailto:dorta.nico2@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
+  </footer>
+
+</body>
+</html>

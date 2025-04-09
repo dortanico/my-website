@@ -9,19 +9,18 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff8f0;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background: linear-gradient(45deg, #d72638, #f46036);
-      padding: 1.5rem;
+      background: linear-gradient(45deg, #e63946, #f1faee);
+      padding: 2rem;
       text-align: center;
       color: white;
       font-family: 'Brush Script MT', cursive;
-      background-image: url('https://www.transparenttextures.com/patterns/mexican-skull.png');
     }
     nav {
-      background: #f6aa1c;
+      background: #f1faee;
       display: flex;
       justify-content: center;
       padding: 1rem;
@@ -33,46 +32,47 @@
       font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .highlight {
-      background: #fff0e6;
-      border-left: 5px solid #d72638;
+      background: #fffdde;
+      border-left: 5px solid #e63946;
       padding: 1rem;
       margin: 1rem 0;
     }
     .about-us {
-      background: #fff5e1;
+      background: #f1faee;
       padding: 2rem;
       margin-bottom: 2rem;
       border-radius: 15px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     .find-us-container {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 2rem;
-    }
-    .find-us-left {
-      flex: 1;
-      background: #fff5e1;
+      background: #f1faee;
       padding: 2rem;
       border-radius: 15px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    .find-us-right {
-      flex: 1;
-      background: #fff5e1;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    .find-us-left, .find-us-right {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
     }
-    .find-us-left h3 {
+    .find-us-left h3, .find-us-right h3 {
       margin-bottom: 1rem;
+      font-weight: bold;
+      color: #e63946;
     }
     .find-us-left ul {
       list-style-type: none;
       padding: 0;
+      font-size: 1rem;
+      color: #333;
     }
     .find-us-left li {
       padding: 5px 0;
@@ -80,12 +80,12 @@
     iframe {
       width: 100%;
       height: 300px;
-      border: none;
+      border-radius: 10px;
     }
     .contact-us {
-      background: #fff5e1;
+      background: #fff;
       padding: 2rem;
-      border-radius: 15px;
+      border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       margin-top: 2rem;
     }
@@ -98,7 +98,7 @@
     }
     .contact-us form button {
       padding: 10px 15px;
-      background-color: #d72638;
+      background-color: #e63946;
       color: white;
       border: none;
       border-radius: 5px;
@@ -106,10 +106,11 @@
       font-size: 16px;
     }
     footer {
-      background: #f46036;
-      color: white;
+      background: #f1faee;
+      color: #333;
       text-align: center;
       padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -124,6 +125,7 @@
     <a href="menu.html">Menu</a>
   </nav>
 
+  <!-- About Us Section -->
   <section id="about-us">
     <div class="about-us">
       <h2>About Us</h2>
@@ -131,6 +133,7 @@
     </div>
   </section>
 
+  <!-- Find Us Section -->
   <section id="find-us">
     <h2>Find Us</h2>
     <div class="find-us-container">
@@ -142,13 +145,13 @@
         <p>(702) 555-1234</p>
         <h3>Business Hours</h3>
         <ul>
+          <li>Monday: 2:00 PM – 9:00 PM</li>
+          <li>Tuesday: 2:00 PM – 9:00 PM</li>
           <li>Wednesday: 2:00 PM – 9:00 PM</li>
           <li>Thursday: 2:00 PM – 9:00 PM</li>
           <li>Friday: 2:00 PM – 10:00 PM</li>
           <li>Saturday: 12:00 PM – 10:00 PM</li>
           <li>Sunday: 12:00 PM – 9:00 PM</li>
-          <li>Monday: 2:00 PM – 9:00 PM</li>
-          <li>Tuesday: 2:00 PM – 9:00 PM</li>
         </ul>
       </div>
 

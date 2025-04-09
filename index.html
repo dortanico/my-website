@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riviera Maya Mexican Restaurant</title>
+  <title>Home | Riviera Maya Mexican Restaurant</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,53 +18,71 @@
     </nav>
   </header>
 
-  <!-- Main Content Section -->
-  <main>
-    <!-- About Us Section (Moved to the top) -->
-    <section id="about-us">
-      <h2>About Us</h2>
-      <p>At Riviera Maya, we bring the vibrant and authentic flavors of Mexico right to your table. With years of tradition in every dish, our mission is to deliver an unforgettable dining experience. We pride ourselves on using fresh, locally sourced ingredients, and every meal is made with love and passion for Mexican cuisine. Come visit us and taste the difference!</p>
-    </section>
+  <!-- About Us Section (Located on Home Page) -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>At Riviera Maya, we bring the vibrant and authentic flavors of Mexico right to your table. With years of tradition in every dish, our mission is to deliver an unforgettable dining experience. We pride ourselves on using fresh, locally sourced ingredients, and every meal is made with love and passion for Mexican cuisine. Come visit us and taste the difference!</p>
+  </section>
 
-    <!-- Visit Us Section -->
-    <section id="visit-us">
-      <h2>Visit Us</h2>
-      <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
-      <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
-      <h3>Business Hours</h3>
-      <ul>
-        <li>Wednesday: 2 PM – 9 PM</li>
-        <li>Thursday: 2 PM – 9 PM</li>
-        <li>Friday: 2 PM – 10 PM</li>
-        <li>Saturday: 12 PM – 10 PM</li>
-        <li>Sunday: 12 PM – 9 PM</li>
-        <li>Monday: 2 PM – 9 PM</li>
-        <li>Tuesday: 2 PM – 9 PM</li>
-      </ul>
-    </section>
+  <!-- Visit Us Section -->
+  <section id="visit-us">
+    <h2>Visit Us</h2>
+    <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
+    <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
+    <h3>Business Hours:</h3>
+    <ul>
+      <li>Wednesday: 2:00 PM – 9:00 PM</li>
+      <li>Thursday: 2:00 PM – 9:00 PM</li>
+      <li>Friday: 2:00 PM – 10:00 PM</li>
+      <li>Saturday: 12:00 PM – 10:00 PM</li>
+      <li>Sunday: 12:00 PM – 9:00 PM</li>
+      <li>Monday: 2:00 PM – 9:00 PM</li>
+      <li>Tuesday: 2:00 PM – 9:00 PM</li>
+    </ul>
+  </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact-us">
-      <h2>Contact Us</h2>
-      <form action="mailto:dorta.nico2@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+  <!-- Contact Us Section -->
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <form action="mailto:dorta.nico2@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
   </footer>
+
+  <!-- Script to Validate Form Input (Optional) -->
+  <script>
+    // Basic validation for email or phone format before submitting
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      const phonePattern = /^\d{10}$/;
+
+      if (email && !email.match(emailPattern)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      if (phone && !phone.match(phonePattern)) {
+        alert('Please enter a valid 10-digit phone number.');
+        return;
+      }
+
+      this.submit();
+    });
+  </script>
 
 </body>
 </html>

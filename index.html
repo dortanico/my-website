@@ -14,11 +14,13 @@
     }
     header {
       background: linear-gradient(45deg, #d72638, #f46036);
-      padding: 1.5rem;
+      padding: 2rem;
       text-align: center;
       color: white;
       font-family: 'Brush Script MT', cursive;
       background-image: url('https://www.transparenttextures.com/patterns/mexican-skull.png');
+      background-size: cover;
+      background-position: center;
     }
     nav {
       background: #f6aa1c;
@@ -27,53 +29,36 @@
       padding: 1rem;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0 1.5rem;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .highlight {
-      background: #fff0e6;
-      border-left: 5px solid #d72638;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-    .contact-section, .visit-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background: #fff5e1;
-      padding: 2rem;
-      border-radius: 15px;
-      margin-top: 2rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .contact-form {
-      flex: 1;
-      min-width: 300px;
-      padding-right: 2rem;
-    }
-    .map {
-      flex: 1;
-      min-width: 300px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background: #d72638;
       color: white;
-      padding: 0.7rem 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+    .hero {
+      background: #f6aa1c;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .hero button {
+      background-color: #d72638;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .hero button:hover {
+      background-color: #f46036;
     }
     footer {
       background: #f46036;
@@ -89,29 +74,25 @@
     <p>Authentic Flavors from the Heart of Mexico</p>
   </header>
   <nav>
-    <a href="#about">About</a>
+    <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
-    <a href="#visit">Visit Us</a>
-    <a href="#contact">Contact</a>
+    <a href="about.html">About Us</a>
   </nav>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <div class="highlight">
-      <p>Located in Henderson, Nevada, Riviera Maya serves vibrant, homemade Mexican dishes made with love. Our colorful plates, warm staff, and authentic recipes bring the taste of Mexico right to your table.</p>
-    </div>
+  <section class="hero">
+    <h2>Welcome to Riviera Maya</h2>
+    <p>Your authentic Mexican dining experience awaits!</p>
+    <button onclick="window.location.href='index.html'">Visit Us & Contact</button>
   </section>
 
-  <section id="visit" class="visit-section">
+  <section class="visit-contact-section">
     <div class="map">
       <h2>Visit Us</h2>
       <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
       <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
       <p><strong>Open Daily:</strong> 11:00 AM – 9:00 PM</p>
     </div>
-  </section>
 
-  <section id="contact" class="contact-section">
     <div class="contact-form">
       <h2>Contact Us</h2>
       <form>
@@ -122,20 +103,10 @@
         <button type="submit">Send</button>
       </form>
     </div>
-    <div>
-      <h3>Phone</h3>
-      <p>(702) 296-9764</p>
-      <h3>Email</h3>
-      <p>info@rivieramayamexican.com</p>
-      <h3>Follow Us</h3>
-      <p>
-        <a href="https://www.instagram.com/rivieramayamexicanrestaurant" target="_blank">Instagram</a>
-      </p>
-    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Riviera Maya Mexican Restaurant • Latino-owned • LGBTQ+ friendly</p>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant • Latino-owned</p>
   </footer>
 </body>
 </html>

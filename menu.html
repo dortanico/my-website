@@ -1,102 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu | Riviera Maya Mexican Restaurant</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff8f0;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(45deg, #d72638, #f46036);
-      padding: 2rem;
-      text-align: center;
-      color: white;
-      font-family: 'Brush Script MT', cursive;
-    }
-    nav {
-      background: #f6aa1c;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .menu-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-    .menu-item {
-      background: #fff5e1;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .menu-item h3 {
-      font-size: 1.8rem;
-      color: #d72638;
-    }
-    .menu-item p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    footer {
-      background: #f46036;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
     <h1>Riviera Maya Mexican Restaurant</h1>
-    <p>Explore our Delicious Menu</p>
+    <p>Authentic Flavors from the Heart of Mexico</p>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About Us</a>
-  </nav>
 
-  <section class="menu-section">
-    <div class="menu-item">
-      <h3>Tacos al Pastor</h3>
-      <p>Traditional pork tacos with pineapple and salsa. A local favorite!</p>
-    </div>
-    <div class="menu-item">
-      <h3>Enchiladas Verdes</h3>
-      <p>Rolled tortillas filled with chicken, covered in a tangy green sauce.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Fajitas</h3>
-      <p>Grilled chicken or beef served with sautéed peppers and onions.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Guacamole & Chips</h3>
-      <p>Fresh avocado guacamole served with crispy tortilla chips.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Churros</h3>
-      <p>Crispy, cinnamon-sugar-dusted churros served with chocolate sauce.</p>
-    </div>
-  </section>
+  <!-- Main Content Section -->
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <ul>
+        <li><strong>Tacos</strong> - Soft corn tortillas with your choice of meat and toppings.</li>
+        <li><strong>Quesadillas</strong> - Grilled flour tortillas stuffed with cheese and your choice of meat.</li>
+        <li><strong>Enchiladas</strong> - Rolled corn tortillas filled with your choice of meat, covered in red sauce and cheese.</li>
+        <li><strong>Fajitas</strong> - Grilled vegetables and your choice of meat served sizzling with tortillas.</li>
+        <li><strong>Guacamole</strong> - Freshly made avocado dip with lime and spices.</li>
+        <li><strong>Churros</strong> - Fried dough dusted with cinnamon and sugar, served with chocolate sauce.</li>
+      </ul>
+    </section>
+  </main>
 
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 Riviera Maya Mexican Restaurant • Latino-owned</p>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
   </footer>
+
 </body>
 </html>

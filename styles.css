@@ -1,39 +1,58 @@
-body {
+/* Reset default browser styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and text styles */
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fff8f0;
   color: #333;
 }
 
+/* Header Section */
 header {
   background: linear-gradient(45deg, #d72638, #f46036);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   color: white;
-  font-family: 'Brush Script MT', cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   font-size: 3rem;
 }
 
+header p {
+  font-size: 1.5rem;
+}
+
 nav {
   background: #f6aa1c;
+  padding: 1rem;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  gap: 2rem;
 }
 
 nav a {
-  margin: 0 1rem;
   text-decoration: none;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
+/* Main Content Section */
 main {
   padding: 2rem;
+  margin-top: 150px; /* To make room for fixed header */
 }
 
 .about-us {
@@ -138,6 +157,7 @@ main {
   background-color: #f46036;
 }
 
+/* Footer Section */
 footer {
   background: #f46036;
   color: white;

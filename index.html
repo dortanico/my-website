@@ -2,161 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Golden Dragon Wok</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riviera Maya Mexican Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #fff9e6, #ffdacc);
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #ffe8d6, #fff);
       color: #333;
     }
-
     header {
-      background-color: #8b0000;
+      background-color: #c1272d;
       color: white;
-      padding: 2rem 1rem;
+      padding: 20px;
       text-align: center;
-      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
     }
-
-    header h1 {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 3rem;
-    }
-
     nav {
-      background-color: #cc0000;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
+      background: #d94f4f;
     }
-
     nav a {
       color: white;
+      padding: 15px;
       text-decoration: none;
       font-weight: bold;
     }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
+    nav a:hover {
+      background-color: #b03a3a;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
     }
-
     .info-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-
-    .menu-item {
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
+    .info-card {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
     }
-
+    .contact-form {
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+    }
     footer {
-      background-color: #8b0000;
-      color: white;
+      background-color: #222;
+      color: #fff;
       text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
+      padding: 20px;
     }
-
-    .map-container {
-      width: 100%;
-      height: 300px;
-      margin-top: 1rem;
+    .button {
+      background-color: #c1272d;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
     }
-
-    .contact-box {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .highlight {
-      background: #fff3cd;
-      border-left: 5px solid #ffae00;
-      padding: 1rem;
-      margin: 2rem 0;
-      font-size: 1.1rem;
+    .button:hover {
+      background-color: #a02020;
     }
   </style>
+  <script>
+    function showAlert() {
+      alert("Thanks for contacting us! We'll get back to you shortly.");
+    }
+  </script>
 </head>
 <body>
-
   <header>
-    <h1>Golden Dragon Wok</h1>
-    <p>Authentic Chinese Cuisine Since 1989</p>
+    <h1>Riviera Maya Mexican Restaurant</h1>
+    <p>Authentic Mexican Cuisine in Henderson, NV</p>
   </header>
-
   <nav>
     <a href="#about">About</a>
     <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
     <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
   </nav>
+  <div class="hero">
+    🌮 Family-Owned • LGBTQ+ Friendly • Drive-Thru Available
+  </div>
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to Riviera Maya! We’ve been proudly serving the Henderson community with delicious, home-style Mexican food for years. Whether you’re dining in, picking up, or getting delivery, we’ve got something to satisfy every craving. Latino-owned and proud, we bring flavor and tradition straight to your table.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>At Golden Dragon Wok, we bring you flavors passed down through generations. Whether you’re craving crispy orange chicken, handmade dumplings, or sizzling beef stir fry, our chefs deliver every time.</p>
-    <div class="highlight">
-      ⭐ Rated #1 Chinese Takeout in the City | 🔥 Free delivery within 5 miles
-    </div>
-  </section>
+    <section id="menu">
+      <h2>Popular Dishes</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Carne Asada Tacos</h3>
+          <p>Grilled steak, onions, cilantro, and house salsa on warm corn tortillas.</p>
+        </div>
+        <div class="info-card">
+          <h3>Enchiladas Verdes</h3>
+          <p>Chicken enchiladas topped with green tomatillo sauce, crema, and cheese.</p>
+        </div>
+        <div class="info-card">
+          <h3>Quesabirria Tacos</h3>
+          <p>Beef birria tacos with melted cheese, served with a rich consommé for dipping.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="menu">
-    <h2>Our Best Sellers</h2>
-    <div class="info-grid">
-      <div class="menu-item">
-        <strong>🥡 Orange Chicken</strong><br/>
-        Sweet, tangy, and crispy. Served with white rice. — $10.99
-      </div>
-      <div class="menu-item">
-        <strong>🥟 Pork Dumplings</strong><br/>
-        Steamed or fried, juicy pork-filled dumplings. — $7.99
-      </div>
-      <div class="menu-item">
-        <strong>🍜 Spicy Beef Noodles</strong><br/>
-        Hand-pulled noodles in a bold, rich broth. — $11.99
-      </div>
-      <div class="menu-item">
-        <strong>🌱 Vegetable Lo Mein</strong><br/>
-        Noodles stir-fried with fresh veggies. — $9.49
-      </div>
-    </div>
-  </section>
+    <section id="location">
+      <h2>Visit Us</h2>
+      <p><strong>Address:</strong> 2861 N Green Valley Pkwy, Henderson, NV 89014</p>
+      <p><strong>Phone:</strong> (702) 296-9764</p>
+      <p><strong>Hours:</strong> 11:00 AM – 9:00 PM (Daily)</p>
+      <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-box">
-      <p><strong>📞 Phone:</strong> (555) 123-4567</p>
-      <p><strong>📧 Email:</strong> goldendragon@wokmail.com</p>
-      <p><strong>📍 Address:</strong> 123 Bamboo St, Las Vegas, NV</p>
-      <p><strong>🕐 Hours:</strong> Mon–Sat: 11AM–9PM | Sun: 12PM–7PM</p>
-    </div>
-  </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form onsubmit="showAlert(); return false;">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required><br /><br />
 
-  <section id="location">
-    <h2>Find Us Here</h2>
-    <div class="map-container">
-      <iframe src="https://maps.google.com/maps?q=las%20vegas&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </section>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Golden Dragon Wok | Designed by Nick</p>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant. All rights reserved.</p>
+    <p>Follow us on <a href="#" style="color: #f4d35e;">Instagram</a> | <a href="#" style="color: #f4d35e;">Facebook</a></p>
   </footer>
-
 </body>
 </html>

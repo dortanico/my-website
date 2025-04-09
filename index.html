@@ -2,49 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nick's Sample Biz Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golden Dragon Wok</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff9e6, #ffdacc);
+      color: #333;
+    }
+
     header {
-      background-color: #2c3e50;
+      background-color: #8b0000;
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
+      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
     }
+
+    header h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: #cc0000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .menu-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
     footer {
-      background-color: #2c3e50;
+      background-color: #8b0000;
       color: white;
       text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .map-container {
       width: 100%;
+      height: 300px;
+      margin-top: 1rem;
+    }
+
+    .contact-box {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .highlight {
+      background: #fff3cd;
+      border-left: 5px solid #ffae00;
+      padding: 1rem;
+      margin: 2rem 0;
+      font-size: 1.1rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Nick's Web Design Co.</h1>
-    <p>Simple, clean websites for small businesses</p>
+    <h1>Golden Dragon Wok</h1>
+    <p>Authentic Chinese Cuisine Since 1989</p>
   </header>
-  <section>
-    <h2>Welcome to Your New Website!</h2>
-    <p>This is a demo of what your site could look like.</p>
-    <p>We build fast, modern websites to help your business grow online.</p>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Location</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Golden Dragon Wok, we bring you flavors passed down through generations. Whether you’re craving crispy orange chicken, handmade dumplings, or sizzling beef stir fry, our chefs deliver every time.</p>
+    <div class="highlight">
+      ⭐ Rated #1 Chinese Takeout in the City | 🔥 Free delivery within 5 miles
+    </div>
   </section>
+
+  <section id="menu">
+    <h2>Our Best Sellers</h2>
+    <div class="info-grid">
+      <div class="menu-item">
+        <strong>🥡 Orange Chicken</strong><br/>
+        Sweet, tangy, and crispy. Served with white rice. — $10.99
+      </div>
+      <div class="menu-item">
+        <strong>🥟 Pork Dumplings</strong><br/>
+        Steamed or fried, juicy pork-filled dumplings. — $7.99
+      </div>
+      <div class="menu-item">
+        <strong>🍜 Spicy Beef Noodles</strong><br/>
+        Hand-pulled noodles in a bold, rich broth. — $11.99
+      </div>
+      <div class="menu-item">
+        <strong>🌱 Vegetable Lo Mein</strong><br/>
+        Noodles stir-fried with fresh veggies. — $9.49
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>📞 Phone:</strong> (555) 123-4567</p>
+      <p><strong>📧 Email:</strong> goldendragon@wokmail.com</p>
+      <p><strong>📍 Address:</strong> 123 Bamboo St, Las Vegas, NV</p>
+      <p><strong>🕐 Hours:</strong> Mon–Sat: 11AM–9PM | Sun: 12PM–7PM</p>
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Find Us Here</h2>
+    <div class="map-container">
+      <iframe src="https://maps.google.com/maps?q=las%20vegas&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Nick's Web Design Co.</p>
+    <p>&copy; 2025 Golden Dragon Wok | Designed by Nick</p>
   </footer>
+
 </body>
 </html>

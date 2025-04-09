@@ -1,130 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riviera Maya Mexican Restaurant</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff8f0;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(45deg, #d72638, #f46036);
-      padding: 2rem;
-      text-align: center;
-      color: white;
-      font-family: 'Brush Script MT', cursive;
-    }
-    nav {
-      background: #f6aa1c;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav a {
-      margin: 0 1.5rem;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.2rem;
-    }
-    .hero {
-      background: #f6aa1c;
-      padding: 2rem;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #333;
-    }
-    .hero button {
-      background-color: #d72638;
-      color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .hero button:hover {
-      background-color: #f46036;
-    }
-    section {
-      padding: 2rem;
-    }
-    .visit-contact-section {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 2rem;
-    }
-    .map {
-      width: 45%;
-    }
-    .contact-form {
-      width: 45%;
-    }
-    footer {
-      background: #f46036;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    footer .contact-info {
-      margin-top: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
     <h1>Riviera Maya Mexican Restaurant</h1>
     <p>Authentic Flavors from the Heart of Mexico</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about-us">About Us</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about-us.html">About Us</a>
-  </nav>
 
-  <section class="hero">
-    <h2>Welcome to Riviera Maya</h2>
-    <p>Your authentic Mexican dining experience awaits!</p>
-    <button onclick="window.location.href='index.html'">Visit Us & Contact</button>
-  </section>
+  <!-- Main Content Section -->
+  <main>
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+      <h2>About Us</h2>
+      <p>At Riviera Maya, we bring the vibrant and authentic flavors of Mexico right to your table. With years of tradition in every dish, our mission is to deliver an unforgettable dining experience.</p>
+    </section>
 
-  <section class="visit-contact-section">
-    <div class="map">
-      <h2>Visit Us</h2>
-      <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
-      <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
-      <p><strong>Open Daily:</strong> 11:00 AM – 9:00 PM</p>
-    </div>
+    <!-- Visit Us & Contact Section -->
+    <section id="visit-us-contact" class="visit-contact">
+      <div class="map">
+        <h2>Visit Us</h2>
+        <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
+        <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed" width="100%" height="300" style="border:0;"></iframe>
+      </div>
 
-    <div class="contact-form">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Phone Number">
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+      <div class="business-hours">
+        <h3>Business Hours</h3>
+        <div class="hours">
+          <!-- Hours formatted nicely -->
+          <div class="day">
+            <span class="day-name">Wednesday</span><span class="time">2:00 PM - 9:00 PM</span>
+          </div>
+          <div class="day">
+            <span class="day-name">Thursday</span><span class="time">2:00 PM - 9:00 PM</span>
+          </div>
+          <div class="day">
+            <span class="day-name">Friday</span><span class="time">2:00 PM - 10:00 PM</span>
+          </div>
+          <div class="day">
+            <span class="day-name">Saturday</span><span class="time">12:00 PM - 10:00 PM</span>
+          </div>
+          <div class="day">
+            <span class="day-name">Sunday</span><span class="time">12:00 PM - 9:00 PM</span>
+          </div>
+          <div class="day">
+            <span class="day-name">Monday</span><span class="time">2:00 PM - 9:00 PM</span>
+          </div>
+          <div class="day">
+            <span class="day-name">Tuesday</span><span class="time">2:00 PM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- Contact Form Section -->
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <p>Have a question or comment? Reach out and we'll get back to you soon!</p>
+        <form id="contact-form" onsubmit="sendEmail(event)">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="tel" id="phone" placeholder="Your Phone Number (Optional)">
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Riviera Maya Mexican Restaurant • Latino-owned</p>
-    <div class="contact-info">
-      <p>Phone: (702) 555-1234</p>
-      <p>Email: info@rivieramaya.com</p>
-    </div>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

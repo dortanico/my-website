@@ -2,101 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Menu | Riviera Maya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Riviera Maya Mexican Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      background-color: #fff8f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
       color: #333;
     }
     header {
       background: linear-gradient(45deg, #d72638, #f46036);
-      padding: 1.5rem;
-      color: white;
+      padding: 2rem;
       text-align: center;
-      background-image: url('https://www.transparenttextures.com/patterns/mexican-skull.png');
+      color: white;
+      font-family: 'Brush Script MT', cursive;
     }
     nav {
       background: #f6aa1c;
+      display: flex;
+      justify-content: center;
       padding: 1rem;
-      text-align: center;
     }
     nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
       margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
     }
-    .menu-section {
+    section {
       padding: 2rem;
     }
-    h2 {
-      text-align: center;
-      color: #d72638;
-      margin-bottom: 1rem;
+    .menu-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
     .menu-item {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 10px;
-      margin: 1rem auto;
-      max-width: 600px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: #fff5e1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .menu-item h3 {
-      margin-top: 0;
-      color: #f46036;
+      font-size: 1.8rem;
+      color: #d72638;
     }
     .menu-item p {
-      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #f46036;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Riviera Maya Menu</h1>
-    <p>Explore our authentic Mexican dishes</p>
+    <h1>Riviera Maya Mexican Restaurant</h1>
+    <p>Explore our Delicious Menu</p>
   </header>
   <nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
-    <a href="index.html#visit">Visit</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="about.html">About Us</a>
   </nav>
 
-  <div class="menu-section">
-    <h2>Appetizers</h2>
+  <section class="menu-section">
     <div class="menu-item">
-      <h3>Chips & Guac - $6.99</h3>
-      <p>Freshly made guacamole served with crispy tortilla chips.</p>
+      <h3>Tacos al Pastor</h3>
+      <p>Traditional pork tacos with pineapple and salsa. A local favorite!</p>
     </div>
     <div class="menu-item">
-      <h3>Queso Fundido - $7.99</h3>
-      <p>Melted cheese blend with chorizo and tortillas.</p>
+      <h3>Enchiladas Verdes</h3>
+      <p>Rolled tortillas filled with chicken, covered in a tangy green sauce.</p>
     </div>
+    <div class="menu-item">
+      <h3>Fajitas</h3>
+      <p>Grilled chicken or beef served with sautéed peppers and onions.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Guacamole & Chips</h3>
+      <p>Fresh avocado guacamole served with crispy tortilla chips.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Churros</h3>
+      <p>Crispy, cinnamon-sugar-dusted churros served with chocolate sauce.</p>
+    </div>
+  </section>
 
-    <h2>Entrees</h2>
-    <div class="menu-item">
-      <h3>Carne Asada Plate - $15.99</h3>
-      <p>Grilled steak with rice, beans, guacamole, and tortillas.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Chicken Enchiladas - $13.99</h3>
-      <p>Three enchiladas topped with our homemade red sauce and cheese.</p>
-    </div>
-
-    <h2>Drinks</h2>
-    <div class="menu-item">
-      <h3>Horchata - $3.50</h3>
-      <p>Sweet cinnamon rice milk served cold.</p>
-    </div>
-    <div class="menu-item">
-      <h3>Jarritos - $2.99</h3>
-      <p>Mexican soda available in Tamarindo, Lime, and Pineapple.</p>
-    </div>
-  </div>
+  <footer>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant • Latino-owned</p>
+  </footer>
 </body>
 </html>
-

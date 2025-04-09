@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Riviera Maya Mexican Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(45deg, #d72638, #f46036);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+    }
+    nav {
+      background: #f6aa1c;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .about-us-section {
+      background: #fff5e1;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background: #f46036;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Riviera Maya Mexican Restaurant</h1>
+    <p>Our Story and Tradition</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+  </nav>
+
+  <section class="about-us-section">
+    <h2>About Us</h2>
+    <p>Riviera Maya Mexican Restaurant was born out of a love for authentic Mexican cuisine and a deep passion for providing a welcoming atmosphere for all our guests. We are proud to serve the vibrant flavors of Mexico in every dish.</p>
+    <p>Our goal is to share the heart and soul of Mexican culture through food. From our family recipes to the colorful ambiance, Riviera Maya is more than just a restaurant—it's an experience.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant • Latino-owned</p>
+  </footer>
+</body>
+</html>

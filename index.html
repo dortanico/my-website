@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Riviera Maya Mexican Restaurant</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Riviera Maya</title>
   <style>
     /* General Styles */
     body {
@@ -13,27 +12,51 @@
       background-color: #f4f4f4;
       color: #333;
     }
+
+    /* Header */
     header {
       background: linear-gradient(45deg, #e63946, #f1faee);
-      padding: 2rem;
-      text-align: center;
-      color: white;
-      font-family: 'Brush Script MT', cursive;
-      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       box-sizing: border-box;
     }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-content img {
+      height: 80px;
+      width: auto;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    /* Navigation */
     nav {
       background: #f1faee;
       display: flex;
       justify-content: center;
       padding: 1rem;
     }
+
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
+
+    /* Section */
     section {
       padding: 2rem 0;
       max-width: 1200px;
@@ -43,68 +66,52 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    .highlight {
-      background: #fffdde;
-      border-left: 5px solid #e63946;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-    /* Find Us Section */
+
     .find-us-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       padding: 2rem;
     }
-    .find-us-left {
-      padding: 1.5rem;
-    }
-    .find-us-left h3 {
-      margin-bottom: 1rem;
-      font-weight: bold;
+
+    .find-us-left h3,
+    .find-us-right h3 {
       color: #e63946;
+      margin-bottom: 1rem;
     }
+
     .find-us-left ul {
       list-style-type: none;
       padding: 0;
-      font-size: 1rem;
-      color: #333;
     }
+
     .find-us-left li {
       padding: 5px 0;
     }
-    .find-us-right {
-      padding: 1.5rem;
-      position: relative;
-    }
-    .find-us-right h3 {
-      margin-bottom: 1rem;
-      font-weight: bold;
-      color: #e63946;
-    }
+
     iframe {
       width: 100%;
       height: 350px;
       border-radius: 10px;
+      border: none;
     }
-    /* Merged About Us inside Find Us */
+
     .about-us-merged {
       margin-top: 20px;
       padding: 1rem;
-      /* No background color so it blends with the section */
-      /* Optionally, you could add a subtle border-top if desired: */
-      /* border-top: 1px solid #ddd; */
     }
+
     .about-us-merged h3 {
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
       color: #e63946;
     }
+
     .about-us-merged p {
       font-size: 1rem;
       color: #333;
-      margin: 0;
     }
+
     footer {
       background: #f1faee;
       color: #333;
@@ -115,22 +122,26 @@
   </style>
 </head>
 <body>
+
+  <!-- Header with Logo and Name -->
   <header>
-    <h1>Riviera Maya Mexican Restaurant</h1>
-    <p>Authentic Flavors from the Heart of Mexico</p>
+    <div class="header-content">
+      <img src="logo.png" alt="Riviera Maya Logo" />
+      <h1>Riviera Maya</h1>
+    </div>
   </header>
-  
+
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
   </nav>
 
-  <!-- About Us Section (Removed from its own section) -->
   <!-- Find Us Section -->
   <section id="find-us">
     <h2 style="padding-left: 2rem;">Find Us</h2>
     <div class="find-us-container">
-      <!-- Find Us Left (Address, Phone, Email, Business Hours) -->
+      <!-- Left Info -->
       <div class="find-us-left">
         <h3>Our Address</h3>
         <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
@@ -150,12 +161,11 @@
         </ul>
       </div>
 
-      <!-- Find Us Right (Google Map and Merged About Us) -->
+      <!-- Right Map and About -->
       <div class="find-us-right">
         <h3>Our Location</h3>
         <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed"></iframe>
 
-        <!-- About Us Merged Box Below the Map -->
         <div class="about-us-merged">
           <h3>About Us</h3>
           <p>This section will provide an introduction to the restaurant’s history, values, and vision. More details will be added soon!</p>
@@ -164,8 +174,10 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
   </footer>
+
 </body>
 </html>

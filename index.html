@@ -3,50 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Riviera Maya Mexican Restaurant</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Riviera Maya Mexican Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fffae6; /* Warm yellow background */
-      color: #7c3e00; /* Dark rustic orange text */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
     header {
-      background-color: #7c3e00; /* Rustic orange header */
-      color: white;
-      padding: 20px 0;
+      background: linear-gradient(45deg, #e63946, #f1faee);
+      padding: 2rem;
       text-align: center;
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+      width: 100%;
+      box-sizing: border-box;
     }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
+    nav {
+      background: #f1faee;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
     }
     section {
-      padding: 80px 10%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: all 0.5s ease;
+      padding: 2rem 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 90%; /* Adjusting width to make it more compact */
+      background-color: #fff; /* Solid white background for sections */
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
     }
-    h2 {
-      font-size: 2rem;
+    .highlight {
+      background: #fffdde;
+      border-left: 5px solid #e63946;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .about-us, .find-us-container, .contact-us {
+      margin-bottom: 2rem;
+    }
+    .find-us-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .find-us-left, .find-us-right {
+      padding: 1.5rem;
+    }
+    .find-us-left h3, .find-us-right h3 {
       margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .button {
-      background-color: #ff9f00; /* Button color to match the theme */
-      padding: 10px 20px;
-      color: white;
-      text-decoration: none;
       font-weight: bold;
+      color: #e63946;
+    }
+    .find-us-left ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .find-us-left li {
+      padding: 5px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .contact-us {
+      padding: 2rem;
+      background: #e63946;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      color: #fff;
+    }
+    .contact-us form input, .contact-us form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
       border-radius: 5px;
+    }
+    .contact-us form button {
+      padding: 10px 15px;
+      background-color: #f1faee;
+      color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+    footer {
+      background: #f1faee;
+      color: #333;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -55,25 +117,63 @@
     <h1>Riviera Maya Mexican Restaurant</h1>
     <p>Authentic Flavors from the Heart of Mexico</p>
   </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+  </nav>
 
-  <section>
+  <!-- About Us Section -->
+  <section id="about-us">
     <h2>About Us</h2>
-    <p>Welcome to Riviera Maya, where we serve authentic Mexican cuisine in a warm and inviting atmosphere. Our flavors are inspired by the heart of Mexico, and we're here to bring the joy of traditional dishes to your table.</p>
+    <p>Located in Henderson, Nevada, Riviera Maya serves vibrant, homemade Mexican dishes made with love. Our colorful plates, warm staff, and authentic recipes bring the taste of Mexico right to your table. Whether you're here for lunch or dinner, you'll find a delicious, satisfying meal in every bite.</p>
   </section>
 
-  <section>
-    <h2>Menu</h2>
-    <p>Check out our menu for a wide range of delicious Mexican dishes! From tacos to enchiladas, we've got everything you crave.</p>
-    <a href="menu.html" class="button">View Menu</a>
+  <!-- Find Us Section -->
+  <section id="find-us">
+    <h2>Find Us</h2>
+    <div class="find-us-container">
+      <!-- Find Us Left (Address, Phone, Business Hours) -->
+      <div class="find-us-left">
+        <h3>Our Address</h3>
+        <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
+        <h3>Phone</h3>
+        <p>(702) 555-1234</p>
+        <h3>Business Hours</h3>
+        <ul>
+          <li>Monday: 2:00 PM – 9:00 PM</li>
+          <li>Tuesday: 2:00 PM – 9:00 PM</li>
+          <li>Wednesday: 2:00 PM – 9:00 PM</li>
+          <li>Thursday: 2:00 PM – 9:00 PM</li>
+          <li>Friday: 2:00 PM – 10:00 PM</li>
+          <li>Saturday: 12:00 PM – 10:00 PM</li>
+          <li>Sunday: 12:00 PM – 9:00 PM</li>
+        </ul>
+      </div>
+
+      <!-- Find Us Right (Google Map) -->
+      <div class="find-us-right">
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed"></iframe>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Visit Us</h2>
-    <p>Come visit us at our cozy location, and enjoy the best Mexican food in town!</p>
+  <!-- Contact Us Section -->
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-us">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Riviera Maya Mexican Restaurant. All Rights Reserved.</p>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
   </footer>
 </body>
 </html>

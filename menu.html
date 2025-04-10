@@ -4,69 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu - Riviera Maya Mexican Restaurant</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fffae6; /* Warm yellow background */
     }
     header {
-      background: linear-gradient(45deg, #e63946, #f1faee);
-      padding: 2rem;
-      text-align: center;
+      background-color: #7c3e00; /* Warm rustic orange for header */
       color: white;
-      font-family: 'Brush Script MT', cursive;
-      width: 100%;
-      box-sizing: border-box;
+      padding: 20px 0;
+      text-align: center;
     }
-    nav {
-      background: #f1faee;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
     }
     section {
-      padding: 2rem 0;
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 90%; /* Adjusting width to make it more compact */
-      background-color: #fff; /* Solid white background for sections */
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
-    }
-    .highlight {
-      background: #fffdde;
-      border-left: 5px solid #e63946;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-    .menu-item {
+      min-height: 100vh;
+      padding: 80px 10%;
       display: flex;
-      justify-content: space-between;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.5s ease;
     }
-    .menu-item:last-child {
-      border-bottom: none;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    .menu-item h4 {
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #7c3e00; /* Matching color */
+    }
+    .theme {
+      border-bottom: 2px solid #ddd;
+    }
+    .button {
+      background-color: #ff9f00; /* Button color for "Warm Fiesta" */
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
       font-weight: bold;
-      color: #e63946;
-    }
-    footer {
-      background: #f1faee;
-      color: #333;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -75,51 +57,20 @@
     <h1>Riviera Maya Mexican Restaurant</h1>
     <p>Authentic Flavors from the Heart of Mexico</p>
   </header>
-  
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-  </nav>
 
-  <!-- Menu Section -->
-  <section id="menu">
+  <section>
     <h2>Our Menu</h2>
-    <div class="menu-item">
-      <h4>Tacos al Pastor</h4>
-      <p>$12.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Carne Asada Burrito</h4>
-      <p>$10.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Enchiladas Verdes</h4>
-      <p>$13.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Chiles Rellenos</h4>
-      <p>$14.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Quesadilla Supreme</h4>
-      <p>$9.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Elote (Mexican Street Corn)</h4>
-      <p>$4.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Sopa de Lima (Lime Soup)</h4>
-      <p>$8.99</p>
-    </div>
-    <div class="menu-item">
-      <h4>Guacamole & Chips</h4>
-      <p>$5.99</p>
-    </div>
+    <p>Explore our menu and discover the delicious, authentic Mexican dishes we serve. Whether you're craving tacos, burritos, or something more adventurous, we’ve got it all!</p>
+    <!-- Add your actual menu items below, here’s a sample -->
+    <ul>
+      <li>Tacos (Carne Asada, Al Pastor, Pollo)</li>
+      <li>Burritos (Beef, Chicken, Veggie)</li>
+      <li>Enchiladas (Cheese, Chicken, Beef)</li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
+    <p>&copy; 2025 Riviera Maya Mexican Restaurant. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

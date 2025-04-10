@@ -1,171 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riviera Maya Mexican Restaurant</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    /* General Styles */
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8e6;
       color: #333;
     }
     header {
-      background: linear-gradient(45deg, #e63946, #f1faee);
-      padding: 2rem;
-      text-align: center;
+      background-color: #e63946; /* Bold deep red */
       color: white;
-      font-family: 'Brush Script MT', cursive;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    nav {
-      background: #f1faee;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    section {
+      text-align: center;
       padding: 2rem 0;
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 90%;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    .highlight {
-      background: #fffdde;
-      border-left: 5px solid #e63946;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-    /* Find Us Section */
-    .find-us-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      padding: 2rem;
-    }
-    .find-us-left {
-      padding: 1.5rem;
-    }
-    .find-us-left h3 {
-      margin-bottom: 1rem;
-      font-weight: bold;
-      color: #e63946;
-    }
-    .find-us-left ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1rem;
-      color: #333;
-    }
-    .find-us-left li {
-      padding: 5px 0;
-    }
-    .find-us-right {
-      padding: 1.5rem;
       position: relative;
     }
-    .find-us-right h3 {
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-content img {
+      max-height: 80px;
       margin-bottom: 1rem;
-      font-weight: bold;
-      color: #e63946;
     }
-    iframe {
-      width: 100%;
-      height: 350px;
-      border-radius: 10px;
-    }
-    /* Merged About Us inside Find Us */
-    .about-us-merged {
-      margin-top: 20px;
-      padding: 1rem;
-      /* No background color so it blends with the section */
-      /* Optionally, you could add a subtle border-top if desired: */
-      /* border-top: 1px solid #ddd; */
-    }
-    .about-us-merged h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-      color: #e63946;
-    }
-    .about-us-merged p {
-      font-size: 1rem;
-      color: #333;
+    header h1 {
+      font-size: 3rem;
       margin: 0;
     }
-    footer {
-      background: #f1faee;
-      color: #333;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    .wave {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .wave svg {
+      display: block;
+      width: calc(200% + 1.3px);
+      height: 100px;
+    }
+    main {
+      background-color: #fff8e6;
+      padding: 2rem;
+    }
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Riviera Maya Mexican Restaurant</h1>
-    <p>Authentic Flavors from the Heart of Mexico</p>
-  </header>
-  
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-  </nav>
-
-  <!-- About Us Section (Removed from its own section) -->
-  <!-- Find Us Section -->
-  <section id="find-us">
-    <h2 style="padding-left: 2rem;">Find Us</h2>
-    <div class="find-us-container">
-      <!-- Find Us Left (Address, Phone, Email, Business Hours) -->
-      <div class="find-us-left">
-        <h3>Our Address</h3>
-        <p>2861 N Green Valley Pkwy, Henderson, NV 89014</p>
-        <h3>Phone</h3>
-        <p>(702) 555-1234</p>
-        <h3>Email</h3>
-        <p>contact@rivieramayarestaurant.com</p>
-        <h3>Business Hours</h3>
-        <ul>
-          <li>Monday: 2:00 PM – 9:00 PM</li>
-          <li>Tuesday: 2:00 PM – 9:00 PM</li>
-          <li>Wednesday: 2:00 PM – 9:00 PM</li>
-          <li>Thursday: 2:00 PM – 9:00 PM</li>
-          <li>Friday: 2:00 PM – 10:00 PM</li>
-          <li>Saturday: 12:00 PM – 10:00 PM</li>
-          <li>Sunday: 12:00 PM – 9:00 PM</li>
-        </ul>
-      </div>
-
-      <!-- Find Us Right (Google Map and Merged About Us) -->
-      <div class="find-us-right">
-        <h3>Our Location</h3>
-        <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed"></iframe>
-
-        <!-- About Us Merged Box Below the Map -->
-        <div class="about-us-merged">
-          <h3>About Us</h3>
-          <p>This section will provide an introduction to the restaurant’s history, values, and vision. More details will be added soon!</p>
-        </div>
-      </div>
+    <div class="header-content">
+      <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/restaurant/cover_square/f4948fb6-a123-44bd-8c5d-4ce5137d281e.jpg" alt="Riviera Maya Logo">
+      <h1>Riviera Maya Mexican Restaurant</h1>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Riviera Maya Mexican Restaurant</p>
-  </footer>
+    <div class="wave">
+      <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+        <path d="M0,100 C150,0 350,0 500,100 L500,0 L0,0 Z" style="stroke: none; fill: #fff8e6;"></path>
+      </svg>
+    </div>
+  </header>
+  <main>
+    <h2>Welcome!</h2>
+    <p>This example features a smooth curved transition from the header (with our logo) to the main content. It blends a bold solid header with a stunning SVG wave transition, creating an engaging and modern look for a Mexican restaurant website.</p>
+  </main>
 </body>
 </html>

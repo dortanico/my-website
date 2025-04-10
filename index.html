@@ -34,10 +34,13 @@
       font-weight: bold;
     }
     section {
-      padding: 3rem;
+      padding: 2rem 0;
       max-width: 1200px;
       margin: 0 auto;
       width: 90%; /* Adjusting width to make it more compact */
+      background-color: #fff; /* Solid white background for sections */
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
     }
     .highlight {
       background: #fffdde;
@@ -45,29 +48,17 @@
       padding: 1rem;
       margin: 1rem 0;
     }
-    .about-us {
-      background: #f1faee;
-      padding: 2rem;
+    .about-us, .find-us-container, .contact-us {
       margin-bottom: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     .find-us-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      background: #f1faee;
       padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 900px; /* Limiting max-width for better presentation */
-      margin: 0 auto; /* Centering */
     }
     .find-us-left, .find-us-right {
-      background: #fff;
       padding: 1.5rem;
-      border-radius: 10px;
     }
     .find-us-left h3, .find-us-right h3 {
       margin-bottom: 1rem;
@@ -89,13 +80,11 @@
       border-radius: 10px;
     }
     .contact-us {
-      background: #fff;
       padding: 2rem;
+      background: #e63946;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-top: 2rem;
-      max-width: 600px; /* Limiting width */
-      margin: 0 auto; /* Centering */
+      color: #fff;
     }
     .contact-us form input, .contact-us form textarea {
       width: 100%;
@@ -106,8 +95,8 @@
     }
     .contact-us form button {
       padding: 10px 15px;
-      background-color: #e63946;
-      color: white;
+      background-color: #f1faee;
+      color: #333;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -136,10 +125,8 @@
 
   <!-- About Us Section -->
   <section id="about-us">
-    <div class="about-us">
-      <h2>About Us</h2>
-      <p>Located in Henderson, Nevada, Riviera Maya serves vibrant, homemade Mexican dishes made with love. Our colorful plates, warm staff, and authentic recipes bring the taste of Mexico right to your table. Whether you're here for lunch or dinner, you'll find a delicious, satisfying meal in every bite.</p>
-    </div>
+    <h2>About Us</h2>
+    <p>Located in Henderson, Nevada, Riviera Maya serves vibrant, homemade Mexican dishes made with love. Our colorful plates, warm staff, and authentic recipes bring the taste of Mexico right to your table. Whether you're here for lunch or dinner, you'll find a delicious, satisfying meal in every bite.</p>
   </section>
 
   <!-- Find Us Section -->

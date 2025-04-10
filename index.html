@@ -37,10 +37,10 @@
       padding: 2rem 0;
       max-width: 1200px;
       margin: 0 auto;
-      width: 90%; /* Adjusting width to make it more compact */
-      background-color: #fff; /* Solid white background for sections */
+      width: 90%;
+      background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     .highlight {
       background: #fffdde;
@@ -48,19 +48,16 @@
       padding: 1rem;
       margin: 1rem 0;
     }
-    .about-us, .find-us-container, .contact-us {
-      margin-bottom: 2rem;
-    }
     .find-us-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       padding: 2rem;
     }
-    .find-us-left, .find-us-right {
+    .find-us-left {
       padding: 1.5rem;
     }
-    .find-us-left h3, .find-us-right h3 {
+    .find-us-left h3 {
       margin-bottom: 1rem;
       font-weight: bold;
       color: #e63946;
@@ -74,17 +71,24 @@
     .find-us-left li {
       padding: 5px 0;
     }
+    .find-us-right {
+      padding: 1.5rem;
+      position: relative;
+    }
     iframe {
       width: 100%;
       height: 300px;
       border-radius: 10px;
     }
     .contact-us {
-      padding: 2rem;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
       background: #e63946;
       border-radius: 10px;
+      padding: 1.5rem;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      color: #fff;
+      color: white;
     }
     .contact-us form input, .contact-us form textarea {
       width: 100%;
@@ -129,7 +133,7 @@
     <p>Located in Henderson, Nevada, Riviera Maya serves vibrant, homemade Mexican dishes made with love. Our colorful plates, warm staff, and authentic recipes bring the taste of Mexico right to your table. Whether you're here for lunch or dinner, you'll find a delicious, satisfying meal in every bite.</p>
   </section>
 
-  <!-- Find Us Section -->
+  <!-- Find Us Section (with Contact Us merged) -->
   <section id="find-us">
     <h2>Find Us</h2>
     <div class="find-us-container">
@@ -151,24 +155,21 @@
         </ul>
       </div>
 
-      <!-- Find Us Right (Google Map) -->
+      <!-- Find Us Right (Google Map & Contact Us) -->
       <div class="find-us-right">
         <h3>Our Location</h3>
         <iframe src="https://www.google.com/maps?q=2861+N+Green+Valley+Pkwy,+Henderson,+NV+89014&output=embed"></iframe>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact-us">
-    <h2>Contact Us</h2>
-    <div class="contact-us">
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 

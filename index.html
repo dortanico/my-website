@@ -85,7 +85,6 @@
       bottom: 20px;
       width: 100%;
       background: #f1faee;
-      border-radius: 10px;
       padding: 1.5rem;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       color: #333;
@@ -97,10 +96,19 @@
     }
     .contact-us form input, .contact-us form textarea {
       width: 100%;
-      padding: 10px;
+      padding: 8px;
       margin: 0.5rem 0;
-      border: 1px solid #ccc;
       border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .contact-us form input[type="text"], 
+    .contact-us form input[type="email"] {
+      max-width: 400px; /* Limit the width */
+    }
+    .contact-us form textarea {
+      height: 100px;
+      max-width: 400px; /* Limit the width */
     }
     .contact-us form button {
       padding: 10px 15px;
@@ -111,6 +119,7 @@
       cursor: pointer;
       font-size: 16px;
       width: 100%;
+      max-width: 400px; /* Match the width with other form elements */
     }
     footer {
       background: #f1faee;
